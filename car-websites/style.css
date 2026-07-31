@@ -1,0 +1,399 @@
+/* ==================== BASIC STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero-section {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 60px 50px;
+}
+
+.about-content {
+    flex: 1;
+    padding-left: 40px;
+}
+
+.about-content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+/* BUTTONS STYLING */
+.btn {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero-content .btn {
+    background-color: #0000ff;
+    color: white;
+}
+
+.gray-btn {
+    background-color: #777;
+    color: white;
+}
+
+.add-to-cart {
+    background-color: #111;
+    color: white;
+    width: 80%;
+    margin-top: auto; /* Button ko hamesha card k bottom me fix rakhega */
+}
+
+/* JAVASCRIPT STATE FOR BLUE BUTTON */
+.btn-clicked {
+    background-color: #0000ff !important;
+    color: white !important;
+}
+
+/* ==================== CARDS SECTION ==================== */
+.cars-section {
+    padding: 60px 50px;
+    background-color: #f9f9f9;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CARD STYLE & MOVE EFFECT (SAB SAME SIZE K HAIN) */
+.car-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+    /* Yeh height fix karega taake koi card bada chota na ho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 420px;
+
+    /* Card Smooth Movement Transition */
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+}
+
+/* Mouse hover karne par card smoothly upar move hoga */
+.car-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* IMAGE CONTAINER FOR PERFECT FIT */
+.car-img-container {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #fafafa; /* Fallback background agar image load na ho */
+    border-radius: 6px;
+}
+
+.car-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Image stretched nahi hogi, sahi fit aayegi */
+}
+
+.car-card h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.sub-text {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    height: 32px; /* Text line height fix */
+    overflow: hidden;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0000ff;
+    margin-bottom: 15px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 60px 50px;
+    background-color: #fff;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-left,
+.contact-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-left h2 {
+    margin-bottom: 15px;
+}
+
+.contact-lead {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: #0000ff;
+    width: 18px;
+}
+
+.contact-right {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.contact-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #000;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* THEME TOGGLE ICON */
+#theme-toggle {
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.2);
+}
+
+/* ==================== DARK MODE ==================== */
+body.dark-mode {
+    background-color: #111;
+    color: #eee;
+}
+
+body.dark-mode .hero-section {
+    background-color: #181818;
+    color: #eee;
+}
+
+body.dark-mode .hero-content p {
+    color: #bbb;
+}
+
+body.dark-mode .cars-section {
+    background-color: #151515;
+}
+
+body.dark-mode .car-card {
+    background-color: #222;
+    color: #eee;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .car-card h3 {
+    color: #fff;
+}
+
+body.dark-mode .sub-text {
+    color: #aaa;
+}
+
+body.dark-mode .car-img-container {
+    background-color: #2a2a2a;
+}
+
+body.dark-mode .contact-section {
+    background-color: #181818;
+}
+
+body.dark-mode .contact-lead {
+    color: #aaa;
+}
+
+body.dark-mode .contact-right {
+    background-color: #222;
+    color: #eee;
+    box-shadow: 0 2px 15px rgba(255,255,255,0.05);
+}
+
+body.dark-mode .contact-info {
+    color: #ddd;
+}
+
+body.dark-mode .contact-right input,
+body.dark-mode .contact-right textarea {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #eee;
+}
+
+body.dark-mode #theme-toggle::before {
+    content: "\f185"; /* fa-sun */
+}

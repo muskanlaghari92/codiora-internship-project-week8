@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-car"></i> Car World
+        </div>
+        <nav class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#cars">CARS</a>
+            <a href="#contact">CONTACT</a>
+            <i class="fa-solid fa-moon" id="theme-toggle" title="Toggle Light/Dark Mode"></i>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Car World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa eligendi perferendis ratione commodi natus incidunt est necessitatibus iste! Incidunt.</p>
+            <button class="btn toggle-blue-btn">Get Started</button>
+        </div>
+        <div class="hero-image">
+          <img src="image1.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2><u>About Us</u></h2>
+            <p>Welcome to Car Rental where we bring the world of cars to your fingertips. Our mission is to simplify the car buying and selling process by providing a user-friendly platform for car enthusiasts, buyers, and dealers.</p>
+            <button class="btn toggle-blue-btn gray-btn">Get Started</button>
+        </div>
+        <div class="about-image">
+            <img src="image2.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="cars" class="cars-section">
+        <div class="cards-container">
+
+            <div class="car-card">
+                <div class="car-img-container">
+                    <img src="image3.jpg" alt="Honda Civic">
+                </div>
+                <h3>Honda Civic</h3>
+                <p class="sub-text">Honda Civic 2024 Blackish</p>
+                <p class="price">$PKR 9,899,000</p>
+                <button class="btn add-to-cart toggle-blue-btn">Add to Cart</button>
+            </div>
+
+            <div class="car-card">
+                <div class="car-img-container">
+                    <img src="image4.jpg">
+                </div>
+                <h3>Hilux 4x4</h3>
+                <p class="sub-text">Toyota Hilux Dark Gray</p>
+                <p class="price">$PKR 1.1 - 1.54 crore</p>
+                <button class="btn add-to-cart toggle-blue-btn">Add to Cart</button>
+            </div>
+
+            <div class="car-card">
+                <div class="car-img-container">
+                    <img src="image5.jpg" alt="Corolla">
+                </div>
+                <h3>Corolla GLI</h3>
+                <p class="sub-text">Toyota Corolla GLI</p>
+                <p class="price">$PKR 3,892,000</p>
+                <button class="btn add-to-cart toggle-blue-btn">Add to Cart</button>
+            </div>
+
+            <div class="car-card">
+                <div class="car-img-container">
+                    <img src="image6.jpg" alt="Land Cruiser">
+                </div>
+                <h3>Land cruiser</h3>
+                <p class="sub-text">Toyota Land Cruiser SUV</p>
+                <p class="price">$PKR 12.0 crore</p>
+                <button class="btn add-to-cart toggle-blue-btn">Add to Cart</button>
+            </div>
+
+            <div class="car-card">
+                <div class="car-img-container">
+                    <img src="image7.jpg" alt="Suzuki Cultus">
+                </div>
+                <h3>Suzuki Cultus</h3>
+                <p class="sub-text">Suzuki Cultus 2024</p>
+                <p class="price">$Rs 2.33 Million</p>
+                <button class="btn add-to-cart toggle-blue-btn">Add to Cart</button>
+            </div>
+
+            <div class="car-card">
+                <div class="car-img-container">
+                    <img src="image8.jpg" alt="Suzuki Alto">
+                </div>
+                <h3>Suzuki Alto</h3>
+                <p class="sub-text">Suzuki Alto VXL 2024</p>
+                <p class="price">$PKR 3,038,540</p>
+                <button class="btn add-to-cart toggle-blue-btn">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-wrapper">
+
+            <div class="contact-left">
+                <h2><u>Contact Us</u></h2>
+                <p class="contact-lead">Have a question or want to buy a car? Reach out to us directly or fill the form.</p>
+
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-envelope"></i> muskanlaghari@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0313-3225133</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Shahdadpur, Sanghar, Sindh, Pakistan</p>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form action="#" onsubmit="event.preventDefault();">
+                    <input type="text" placeholder="Enter Full Name" required>
+                    <input type="tel" placeholder="Enter your Phone Number" required>
+                    <input type="email" placeholder="Enter Email Address" required>
+                    <textarea rows="4" placeholder="Enter your Feedback" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        &copy; 2024 Car Rental. All Right Reserved
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
