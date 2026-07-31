@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Muskan Laghari | Portfolio</title>
+    <meta name="description" content="Official professional portfolio of Muskan Laghari - Web Developer & Digital Marketer. High performance digital experiences with clean code.">
+    <meta name="keywords" content="Muskan Laghari, Web Developer, Frontend Developer, Portfolio, Shahdadpur, Sindh Agriculture University">
+    <meta property="og:title" content="Muskan Laghari | Portfolio">
+    <meta property="og:description" content="Explore optimized software modules, responsive application structures, and UI designs.">
+    <meta property="og:type" content="website">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0b0c10] text-slate-100 font-sans tracking-wide overflow-x-hidden selection:bg-cyan-500 selection:text-slate-900">
+
+    <div id="page-preloader" aria-hidden="true">
+        <div class="preloader-ring"></div>
+    </div>
+
+    <nav class="navbar sticky top-0 z-40 transition-all duration-300" role="navigation" aria-label="Main navigation">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="logo-badge" aria-hidden="true">
+                    <span class="logo-mark">ML</span>
+                </div>
+                <div class="leading-tight">
+                    <span class="block text-xl font-extrabold text-white tracking-wide">Muskan <span class="text-cyan-400">Laghari</span></span>
+                    <span class="block text-[10px] font-semibold text-slate-400 uppercase tracking-widest">Web Developer</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-7 text-sm font-semibold tracking-widest uppercase" id="desktop-nav-links">
+                <a href="#home" class="nav-link text-cyan-400 hover:text-cyan-300 transition-colors">Home</a>
+                <a href="#about" class="nav-link text-slate-400 hover:text-cyan-400 transition-colors">About</a>
+                <a href="#projects" class="nav-link text-slate-400 hover:text-cyan-400 transition-colors">Projects</a>
+                <a href="#skills" class="nav-link text-slate-400 hover:text-cyan-400 transition-colors">Skills</a>
+                <a href="#services" class="nav-link text-slate-400 hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="nav-link text-slate-400 hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#certificates" class="nav-link text-slate-400 hover:text-cyan-400 transition-colors">Certificates</a>
+                <a href="#contact" class="nav-link text-slate-400 hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <button id="theme-toggle" class="text-slate-400 hover:text-cyan-400 transition-colors p-2 text-lg cursor-pointer" aria-label="Toggle light and dark theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="hire-me-btn hidden sm:inline-flex">Hire Me</a>
+                <button id="mobile-menu-toggle" class="md:hidden text-slate-200 text-xl p-2 cursor-pointer" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav-panel">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-nav-panel" class="mobile-nav-panel hidden md:hidden" role="menu" aria-label="Mobile navigation">
+            <a href="#home" class="mobile-nav-link" role="menuitem">Home</a>
+            <a href="#about" class="mobile-nav-link" role="menuitem">About</a>
+            <a href="#projects" class="mobile-nav-link" role="menuitem">Projects</a>
+            <a href="#skills" class="mobile-nav-link" role="menuitem">Skills</a>
+            <a href="#services" class="mobile-nav-link" role="menuitem">Services</a>
+            <a href="#testimonials" class="mobile-nav-link" role="menuitem">Testimonials</a>
+            <a href="#articles" class="mobile-nav-link" role="menuitem">Blog</a>
+            <a href="#certificates" class="mobile-nav-link" role="menuitem">Certificates</a>
+            <a href="#contact" class="mobile-nav-link" role="menuitem">Contact</a>
+            <a href="#contact" class="mobile-nav-link mobile-hire-link" role="menuitem">Hire Me</a>
+        </div>
+    </nav>
+
+    <section id="home" class="max-w-6xl mx-auto px-6 py-20 min-h-[calc(100vh-80px)] flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+        <div class="flex-1 space-y-6 text-center md:text-left flex flex-col justify-center items-center md:items-start">
+            
+            <div class="inline-block px-4 py-1.5 bg-cyan-500/10 border border-cyan-400/30 rounded-full mb-2">
+                <span class="text-xs font-semibold text-cyan-400 tracking-wider uppercase">Junior Web Developer</span>
+            </div>
+
+            <p class="text-xl font-bold tracking-wide bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+                Hello, I'm
+            </p>
+            
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white tracking-tight">
+                Muskan Laghari
+            </h1>
+            
+            <h2 class="text-2xl md:text-3xl font-bold text-white min-h-[40px]">
+                 <span id="moving-text" class="text-cyan-400 font-mono tracking-wide border-r-2 border-cyan-400/80 animate-pulse">Junior Web Developer</span>
+            </h2>
+            
+            <p class="text-slate-400 text-sm md:text-base leading-relaxed max-w-xl">
+                Creating beautiful, responsive and modern digital experiences with clean code. Passionate IT student specializing in production performance tracking setups.
+            </p>
+            
+            <div class="flex items-center justify-center md:justify-start gap-4 pt-2">
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/muskanlaghari92" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/@muskanlaghari-j1r" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="pt-4 flex flex-wrap gap-4">
+                <a href="#projects" class="inline-block px-8 py-3 bg-gradient-to-r from-cyan-400 to-purple-600 text-slate-950 font-bold rounded-full shadow-lg shadow-cyan-500/20 transition-transform transform hover:-translate-y-1">
+                    View My Work
+                </a>
+                <a href="resume.pdf" download class="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-cyan-400 to-purple-600 text-slate-950 font-bold rounded-full shadow-lg shadow-cyan-500/20 transition-transform transform hover:-translate-y-1">
+                    <i class="fas fa-download text-xs"></i> Download Resume
+                </a>
+            </div>
+        </div>
+
+        <div class="flex-1 flex justify-center items-center">
+            <div class="profile-glow-ring relative p-2 rounded-full">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-cyan-400/30">
+                    <img src="Muskan.jpg.jpeg" alt="Portrait of Muskan Laghari" class="w-full h-full object-cover">
+                </div>
+                <span class="floating-badge-dot" aria-hidden="true"></span>
+
+                <div class="orbit-ring orbit-ring-lg">
+                    <div class="orbit-item" style="--angle: 0deg;">
+                        <div class="orbit-pos orbit-pos-lg">
+                            <div class="orbit-fix">
+                                <span class="orbit-icon" aria-hidden="true"><i class="fas fa-medal"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 60deg;">
+                        <div class="orbit-pos orbit-pos-lg">
+                            <div class="orbit-fix">
+                                <a href="https://linkedin.com" target="_blank" rel="noopener" class="orbit-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 120deg;">
+                        <div class="orbit-pos orbit-pos-lg">
+                            <div class="orbit-fix">
+                                <a href="https://instagram.com" target="_blank" rel="noopener" class="orbit-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 180deg;">
+                        <div class="orbit-pos orbit-pos-lg">
+                            <div class="orbit-fix">
+                                <a href="mailto:muskanlaghari92@gmail.com" class="orbit-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 240deg;">
+                        <div class="orbit-pos orbit-pos-lg">
+                            <div class="orbit-fix">
+                                <a href="https://facebook.com" target="_blank" rel="noopener" class="orbit-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orbit-item" style="--angle: 300deg;">
+                        <div class="orbit-pos orbit-pos-lg">
+                            <div class="orbit-fix">
+                                <a href="https://github.com/muskanlaghari92" target="_blank" rel="noopener" class="orbit-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="reveal-section bg-[#0f111a] border-y border-slate-900 py-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            
+            <div class="flex justify-center order-2 md:order-1">
+                <div class="profile-glow-ring relative p-2 rounded-full">
+                    <div class="w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-purple-500/30">
+                        <img src="Muskan.jpg.jpeg" alt="Portrait of Muskan Laghari" class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="orbit-ring orbit-ring-sm">
+                        <div class="orbit-item" style="--angle: 45deg;">
+                            <div class="orbit-pos orbit-pos-sm">
+                                <div class="orbit-fix">
+                                    <span class="orbit-icon" aria-hidden="true"><i class="fas fa-code"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orbit-item" style="--angle: 165deg;">
+                            <div class="orbit-pos orbit-pos-sm">
+                                <div class="orbit-fix">
+                                    <a href="https://github.com/muskanlaghari92" target="_blank" rel="noopener" class="orbit-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orbit-item" style="--angle: 285deg;">
+                            <div class="orbit-pos orbit-pos-sm">
+                                <div class="orbit-fix">
+                                    <span class="orbit-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-6 order-1 md:order-2">
+                <h2 class="text-3xl font-extrabold text-white">About <span class="text-cyan-400">Me</span></h2>
+                <h3 class="text-xl font-bold text-white tracking-wide">Frontend Developer!</h3>
+                
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    I'm Muskan Laghari, an IT student at Sindh Agriculture University with a strong passion for web development and modern digital technologies. I specialize in creating responsive, user-friendly, and visually appealing websites using the latest frontend development practices.
+                    </p>
+
+                <p id="extra-about-text" class="text-slate-400 text-sm leading-relaxed hidden transition-all duration-300">
+                    My journey in technology started with a curiosity about how websites work and has grown into a dedication to building seamless digital experiences. I enjoy transforming ideas into functional web applications while focusing on clean code, performance, and user experience.</p>
+                
+                <div class="pt-2">
+                    <button onclick="toggleAboutText()" id="read-more-btn" class="inline-flex items-center gap-2 px-5 py-2.5 bg-transparent border border-cyan-400 text-cyan-400 font-semibold rounded-lg text-xs tracking-wider uppercase cursor-pointer hover:bg-cyan-400/10 transition-all">
+                        <span id="btn-text">Read More</span>
+                        <i id="btn-icon" class="fas fa-chevron-down text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="metrics-counters" class="reveal-section max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <div class="bg-[#0f111a] border border-slate-800/80 rounded-xl p-6 text-center space-y-2">
+                <div class="text-3xl font-extrabold text-cyan-400 tracking-tight">
+                    <span class="counter-digit" data-start="8" data-target="15">8</span>+
+                </div>
+                <p class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Months Learning Experience</p>
+            </div>
+
+            <div class="bg-[#0f111a] border border-slate-800/80 rounded-xl p-6 text-center space-y-2">
+                <div class="text-3xl font-extrabold text-cyan-400 tracking-tight">
+                    <span class="counter-digit" data-start="0" data-target="15">0</span>+
+                </div>
+                <p class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Projects Completed</p>
+            </div>
+
+            <div class="bg-[#0f111a] border border-slate-800/80 rounded-xl p-6 text-center space-y-2">
+                <div class="text-3xl font-extrabold text-cyan-400 tracking-tight">
+                    <span class="counter-digit" data-start="4" data-target="7">4</span>+
+                </div>
+                <p class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Technical Skills Mastered</p>
+            </div>
+
+            <div class="bg-[#0f111a] border border-slate-800/80 rounded-xl p-6 text-center space-y-2">
+                <div class="text-3xl font-extrabold text-cyan-400 tracking-tight">
+                    <span class="counter-digit" data-start="70" data-target="100">70</span>%
+                </div>
+                <p class="text-[11px] text-slate-400 font-medium uppercase tracking-wider">Dedication Percentage</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="projects" class="reveal-section max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center space-y-3 mb-16">
+            <h2 class="text-3xl font-extrabold text-white">Latest <span class="text-cyan-400">Projects</span></h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
+            <div id="filter-buttons" class="flex flex-wrap justify-center gap-3" role="group" aria-label="Filter projects by category"></div>
+            <div class="relative w-full md:w-72">
+                <label for="search-input" class="sr-only">Search projects by technology</label>
+                <input type="text" id="search-input" placeholder="Search technology..." class="w-full px-4 py-2 bg-[#0f111a] border border-slate-800 rounded-full text-xs text-slate-300 focus:outline-none focus:border-cyan-400 transition-colors">
+                <i class="fas fa-search absolute right-4 top-3 text-xs text-slate-600"></i>
+            </div>
+        </div>
+
+        <div id="empty-state" class="hidden text-center py-20 bg-[#0f111a] border border-dashed border-slate-800 rounded-2xl">
+            <p class="text-slate-500 text-sm">No projects match your search or filter. Try a different keyword or category.</p>
+        </div>
+
+        <div id="projects-container" class="projects-grid"></div>
+    </section>
+
+    <!-- Blog & Articles Section (no nav link, standalone) -->
+    <section id="articles" class="reveal-section max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center space-y-3 mb-16">
+            <h2 class="text-3xl font-extrabold text-white">Blog & <span class="text-cyan-400">Articles</span></h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto rounded-full"></div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <article class="article-card" onclick="openArticle(this)">
+                <div class="article-img-frame">
+                    <img src="blogs1.jpg" alt="Modern CSS Techniques" class="article-thumbnail-image">
+                </div>
+                <div class="p-5 space-y-2">
+                    <h3 class="text-sm font-bold text-slate-200 tracking-wide">Modern CSS Techniques Every Frontend Developer Should Know</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">CSS has evolved far beyond simple styling. Container queries let components respond to their own container rather than the viewport.</p>
+                    <p class="text-xs text-slate-400 leading-relaxed article-full hidden">The :has() selector brings parent-aware styling without JavaScript. CSS Grid subgrid, scroll-driven animations, and native nesting all reduce the need for preprocessors. Staying current with these features means writing leaner stylesheets and shipping fewer lines of code overall.</p>
+                    <button type="button" class="article-read-more">Read More <i class="fas fa-arrow-right text-[9px]"></i></button>
+                </div>
+            </article>
+
+            <article class="article-card" onclick="openArticle(this)">
+                <div class="article-img-frame">
+                    <img src="blogs2.jpg" alt="JavaScript Best Practices" class="article-thumbnail-image">
+                </div>
+                <div class="p-5 space-y-2">
+                    <h3 class="text-sm font-bold text-slate-200 tracking-wide">JavaScript Best Practices for Clean Code</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Practical habits for writing JavaScript that's easier to read, test, and maintain over time.</p>
+                    <p class="text-xs text-slate-400 leading-relaxed article-full hidden">Favor small, single-purpose functions over long ones, name variables for what they hold rather than their type, and avoid deeply nested conditionals by returning early. Consistent formatting and a linter catch mistakes before they reach production, saving debugging time later.</p>
+                    <button type="button" class="article-read-more">Read More <i class="fas fa-arrow-right text-[9px]"></i></button>
+                </div>
+            </article>
+
+            <article class="article-card" onclick="openArticle(this)">
+                <div class="article-img-frame">
+                    <img src="blogs3.jpg" alt="Why Responsive Design Matters" class="article-thumbnail-image">
+                </div>
+                <div class="p-5 space-y-2">
+                    <h3 class="text-sm font-bold text-slate-200 tracking-wide">Why Responsive Design Matters</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Why designing for every screen size isn't optional anymore, and how to approach it without the guesswork.</p>
+                    <p class="text-xs text-slate-400 leading-relaxed article-full hidden">Most visitors now arrive on a phone, not a desktop. A responsive layout adapts spacing, type size, and navigation to fit the screen rather than shrinking a desktop design down. Testing on real devices, not just a resized browser window, catches issues that emulators tend to miss.</p>
+                    <button type="button" class="article-read-more">Read More <i class="fas fa-arrow-right text-[9px]"></i></button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Full Article Overlay: opens blog card content fully on the same page -->
+    <div id="article-overlay" class="article-overlay hidden">
+        <div class="article-overlay-inner">
+            <button type="button" class="article-back-btn" onclick="closeArticle()">
+                <i class="fas fa-arrow-left"></i> Back
+            </button>
+            <div class="article-overlay-img-frame">
+                <img id="overlay-article-img" src="" alt="">
+            </div>
+            <h2 id="overlay-article-title" class="overlay-article-title"></h2>
+            <div id="overlay-article-body" class="overlay-article-body"></div>
+            <button type="button" class="article-back-btn article-back-btn-bottom" onclick="closeArticle()">
+                <i class="fas fa-arrow-left"></i> Back to Blog
+            </button>
+        </div>
+    </div>
+
+    <section id="skills" class="reveal-section bg-[#0f111a] border-t border-slate-900 py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center space-y-3 mb-16">
+                <h2 class="text-3xl font-extrabold text-white">My <span class="text-cyan-400">Skills</span></h2>
+                <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fab fa-html5 text-orange-500 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">HTML5</h3>
+                    <p class="text-[11px] text-slate-500">Semantic, accessible markup structure routing</p>
+                </div>
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fab fa-css3-alt text-blue-500 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">CSS3</h3>
+                    <p class="text-[11px] text-slate-500">Responsive frameworks and animation sets</p>
+                </div>
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fab fa-js text-yellow-500 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">JavaScript</h3>
+                    <p class="text-[11px] text-slate-500">Modern ES6+ logic processing applications</p>
+                </div>
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fas fa-paint-brush text-cyan-400 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">UI/UX Design</h3>
+                    <p class="text-[11px] text-slate-500">User-centered high-fidelity interface models</p>
+                </div>
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fab fa-github text-cyan-400 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">GitHub</h3>
+                    <p class="text-[11px] text-slate-500">Version control management</p>
+                </div>
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fab fa-linkedin-in text-cyan-400 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">LinkedIn</h3>
+                    <p class="text-[11px] text-slate-500">Professional Networking</p>
+                </div>
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fas fa-code text-cyan-400 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">C</h3>
+                    <p class="text-[11px] text-slate-500">Procedural programming fundamentals</p>
+                </div>
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fas fa-laptop-code text-cyan-400 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">C++</h3>
+                    <p class="text-[11px] text-slate-500">Object-oriented systems programming</p>
+                </div>
+                <div class="skill-card p-6 bg-[#0b0c10] border border-slate-800/60 rounded-xl text-center space-y-3">
+                    <i class="fab fa-java text-cyan-400 text-4xl"></i>
+                    <h3 class="text-base font-bold text-white">Java</h3>
+                    <p class="text-[11px] text-slate-500">OOP and application development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="reveal-section max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center space-y-3 mb-16">
+            <h2 class="text-3xl font-extrabold text-white">SERV<span class="text-cyan-400">ICES</span></h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto rounded-full"></div>
+            <p class="text-slate-400 text-sm max-w-xl mx-auto">Services I provide to help bring your ideas to the web.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3 class="text-base font-bold text-white">Web Development</h3>
+                <p class="text-[11px] text-slate-500 leading-relaxed">Custom multi-page websites built with clean, semantic HTML5, CSS3, and JavaScript.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-mobile-screen-button"></i></div>
+                <h3 class="text-base font-bold text-white">Responsive Design</h3>
+                <p class="text-[11px] text-slate-500 leading-relaxed">Layouts that adapt smoothly across mobile, tablet, and desktop screens.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                <h3 class="text-base font-bold text-white">UI/UX Design</h3>
+                <p class="text-[11px] text-slate-500 leading-relaxed">Clean, user-centered interfaces designed for clarity and ease of use.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-database"></i></div>
+                <h3 class="text-base font-bold text-white">Backend Integration</h3>
+                <p class="text-[11px] text-slate-500 leading-relaxed">PHP & MySQL powered dynamic features, admin panels, and data-driven pages.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-plug"></i></div>
+                <h3 class="text-base font-bold text-white">API Integration</h3>
+                <p class="text-[11px] text-slate-500 leading-relaxed">Connecting sites to external and local data sources using Fetch and REST APIs.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-arrows-rotate"></i></div>
+                <h3 class="text-base font-bold text-white">Maintenance & Support</h3>
+                <p class="text-[11px] text-slate-500 leading-relaxed">Ongoing updates, bug fixes, and performance improvements for existing sites.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="reveal-section max-w-6xl mx-auto px-6 py-24">
+        <div class="text-center space-y-3 mb-16">
+            <h2 class="text-3xl font-extrabold text-white">Client <span class="text-cyan-400">Testimonials</span></h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto rounded-full"></div>
+        </div>
+        <div id="blog-container" class="grid md:grid-cols-3 gap-6"></div>
+    </section>
+
+       <!-- CERTIFICATES Section -->
+<section id="certificates">
+  <div class="container">
+    <div class="text-center space-y-3 mb-16">
+      <h2 class="section-title">Certificates & <span class="text-cyan-400">Awards</span></h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto rounded-full"></div>
+    </div>
+    <div class="certificates-grid">
+      
+      <!-- Certificate 1 -->
+<div class="cert-card">
+  <div class="cert-icon">
+    <i class="fas fa-trophy"></i>
+  </div>
+  <div class="cert-details">
+    <h3>STEP Quiz Competition 2025</h3>
+    <div class="cert-details-sub">
+      First Position
+    </div>
+    <div class="issuer">
+      <i class="fas fa-university"></i>
+      Sindh Agriculture University Tandojam - STEP
+    </div>
+    <span class="date">
+      <i class="far fa-calendar-alt"></i>
+      Issued 2025
+    </span>
+    
+              <a href="C1.jpg" class="credential-link">
+            Show Credential <i class="fas fa-arrow-right"></i>
+          </a>
+    
+  </div>
+</div>
+
+      <!-- Certificate 2 -->
+      <div class="cert-card">
+        <div class="cert-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="cert-details">
+          <h3>Web Development Training Program</h3>
+          <div class="issuer">
+            <i class="fas fa-university"></i>
+            STEP
+          </div>
+          <span class="date">
+            <i class="far fa-calendar-alt"></i>
+            Sep 2025 – Nov 2025
+          </span>
+          <a href="C2.png" class="credential-link">
+            Show Credential <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="cert-card">
+        <div class="cert-icon">
+          <i class="fab fa-google"></i>
+        </div>
+        <div class="cert-details">
+          <h3>Google AI Essentials</h3>
+          <div class="issuer">
+            <i class="fab fa-google"></i>
+            Google / Coursera
+          </div>
+          <span class="date">
+            <i class="far fa-calendar-alt"></i>
+            Issued May 2026
+          </span>
+          <a href="C3.png" class="credential-link">
+            Show Credential <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Certificate 4 -->
+<div class="cert-card">
+  <div class="cert-icon">
+    <i class="fas fa-chalkboard-teacher"></i>
+  </div>
+  <div class="cert-details">
+    <h3>Latest Trend of Technical Report Writing</h3>
+    <div class="issuer">
+      <i class="fas fa-users"></i>
+      Quest Innovative Study Circle
+    </div>
+    <span class="date">
+      <i class="far fa-calendar-alt"></i>
+      Issued May 2026
+    </span>
+          <a href="C4.jpg" class="credential-link">
+            Show Credential <i class="fas fa-arrow-right"></i>
+          </a>
+  </div>
+</div>
+
+<!-- Certificate 5 -->
+<div class="cert-card">
+  <div class="cert-icon">
+    <i class="fas fa-laptop-code"></i>
+  </div>
+  <div class="cert-details">
+    <h3>15-Month Web Development Course</h3>
+    <div class="issuer">
+      <i class="fas fa-building"></i>
+      DevSylo
+    </div>
+    <span class="date">
+      <i class="far fa-calendar-alt"></i>
+      Issued May 2026
+    </span>
+   <a href="C5.png" class="credential-link">
+            Show Credential <i class="fas fa-arrow-right"></i>
+          </a>
+  
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="contact" class="reveal-section bg-[#0f111a] border-t border-slate-900 py-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-extrabold text-white">Let's Work <span class="text-cyan-400">Together</span></h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Have a project in mind or want to collaborate? Send a message below and I'll get back to you as soon as possible.
+                    </p>
+                    <div class="space-y-3 text-sm text-slate-300">
+                        <p><i class="fas fa-envelope text-cyan-400 mr-3"></i> muskanlaghari92@gmail.com</p>
+                        <p><i class="fas fa-phone-alt text-cyan-400 mr-3"></i> +92 313 3225133</p>
+                        <div class="contact-detail">
+          <p><i class="fas fa-map-marker-alt text-cyan-400 mr-3"></i>Shahdadpur, Sindh, Pakistan</p>
+          
+        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="space-y-4" novalidate>
+                    <div>
+                        <label for="form-name" class="sr-only">Your Name</label>
+                        <input type="text" id="form-name" placeholder="Your Name" class="w-full px-4 py-3 bg-[#0b0c10] border border-slate-800 rounded-lg text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                        <p id="error-name" class="text-xs text-red-400 mt-1 font-medium hidden" role="alert"></p>
+                    </div>
+                    <div>
+                        <label for="form-email" class="sr-only">Your Email</label>
+                        <input type="email" id="form-email" placeholder="Your Email" class="w-full px-4 py-3 bg-[#0b0c10] border border-slate-800 rounded-lg text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                        <p id="error-email" class="text-xs text-red-400 mt-1 font-medium hidden" role="alert"></p>
+                    </div>
+                    <div>
+                        <label for="form-subject" class="sr-only">Subject</label>
+                        <input type="text" id="form-subject" placeholder="Subject" class="w-full px-4 py-3 bg-[#0b0c10] border border-slate-800 rounded-lg text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                    </div>
+                    <div>
+                        <label for="form-message" class="sr-only">Your Message</label>
+                        <textarea id="form-message" rows="4" placeholder="Your Message" class="w-full px-4 py-3 bg-[#0b0c10] border border-slate-800 rounded-lg text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors"></textarea>
+                        <p id="error-message" class="text-xs text-red-400 mt-1 font-medium hidden" role="alert"></p>
+                    </div>
+                    
+                    <button type="submit" class="w-full py-3 bg-gradient-to-r from-cyan-400 to-purple-600 text-slate-950 font-bold rounded-lg text-sm transition-opacity hover:opacity-90 cursor-pointer">
+                        Send Message
+                    </button>
+
+                    <div id="form-success" class="p-3 bg-emerald-950/50 border border-emerald-500/30 text-emerald-400 text-xs font-semibold rounded-lg text-center hidden" role="alert">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="project-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="bg-[#0f111a] border border-slate-800 w-full max-w-2xl rounded-2xl overflow-hidden max-h-[90vh] flex flex-col animate-fade-in mx-4">
+            <div class="p-5 border-b border-slate-800 flex justify-between items-center bg-[#0b0c10]">
+                <h3 id="modal-title" class="text-lg font-bold text-white"></h3>
+                <button onclick="closeModal()" aria-label="Close project details" class="text-slate-400 hover:text-white text-md p-1 cursor-pointer">✕</button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-6 flex-grow modal-scroll-area">
+                <img id="modal-image" src="" alt="Component Execution Screenshot Frame" class="w-full h-60 object-cover rounded-xl border border-slate-800/80 shadow-md">
+                <div>
+                    <h4 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-1.5">Project Overview</h4>
+                    <p id="modal-desc" class="text-xs text-slate-400 leading-relaxed"></p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold text-purple-400 uppercase tracking-widest mb-2">Integrated Modules & Tools</h4>
+                    <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+                </div>
+            </div>
+            <div id="modal-footer" class="p-5 border-t border-slate-800 bg-[#0b0c10] grid grid-cols-2 gap-4">
+                <a id="modal-github" href="#" target="_blank" rel="noopener" class="text-center py-2 bg-slate-900 hover:bg-slate-800 rounded-lg text-xs font-bold border border-slate-800 text-slate-200 transition-colors">Code Repository</a>
+                <a id="modal-live" href="#" target="_blank" rel="noopener" class="text-center py-2 bg-cyan-400 text-slate-950 font-bold rounded-lg text-xs transition-colors hover:bg-cyan-300">Live Demo View</a>
+            </div>
+        </div>
+    </div>
+
+    <button id="back-to-top" aria-label="Scroll back to top of page">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AI Assistant Chat Widget -->
+    <div id="ai-assistant-widget">
+        <button id="assistant-toggle" aria-label="Open Muskan's Assistant chat" aria-expanded="false">
+            <img src="Muskan.jpg.jpeg" alt="" class="assistant-toggle-avatar">
+            <span class="assistant-toggle-dot" aria-hidden="true"></span>
+        </button>
+
+        <div id="assistant-panel" class="hidden" role="dialog" aria-label="Muskan's Assistant chat window">
+            <div class="assistant-header">
+                <div class="assistant-header-info">
+                    <img src="Muskan.jpg.jpeg" alt="" class="assistant-avatar-sm">
+                    <div class="leading-tight">
+                        <p class="assistant-name">Muskan's Assistant</p>
+                        <p class="assistant-status"><span class="assistant-status-dot"></span> Online</p>
+                    </div>
+                </div>
+                <button id="assistant-close" aria-label="Close chat">✕</button>
+            </div>
+
+            <div class="assistant-body" id="assistant-body">
+                <div class="assistant-msg bot">
+                    Hi 👋 I'm Muskan's assistant. Ask me about her skills, projects, or how to hire her!
+                </div>
+            </div>
+
+            <div class="assistant-quick-replies">
+                <button type="button" class="assistant-chip" data-reply="skills">Skills</button>
+                <button type="button" class="assistant-chip" data-reply="projects">Projects</button>
+                <button type="button" class="assistant-chip" data-reply="hire">Hire</button>
+                <button type="button" class="assistant-chip" data-reply="contact">Contact</button>
+            </div>
+
+            <form id="assistant-input-form" class="assistant-input-row">
+                <input type="text" id="assistant-input" placeholder="Type a message..." aria-label="Type a message to the assistant" autocomplete="off">
+                <button type="submit" aria-label="Send message"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-[#0b0c10] text-slate-600 text-[11px] tracking-wider py-6 text-center border-t border-slate-900">
+        <p>© 2026 Muskan Laghari — Designing and Developing Modern Web Experiences.</p>
+    </footer>
+
+    <!-- Core App Scripts -->
+    <script src="script.js"></script>
+
+    <!-- AI Assistant Widget Logic -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleBtn = document.getElementById("assistant-toggle");
+            const closeBtn = document.getElementById("assistant-close");
+            const panel = document.getElementById("assistant-panel");
+            const body = document.getElementById("assistant-body");
+            const chips = document.querySelectorAll(".assistant-chip");
+            const form = document.getElementById("assistant-input-form");
+            const input = document.getElementById("assistant-input");
+
+            const replies = {
+                skills: { text: "She works with HTML5, CSS3, JavaScript, React.js, Node.js, and more. Scrolling you to the Skills section now 👇", target: "#skills" },
+                projects: { text: "Here are some of her featured projects 👇", target: "#projects" },
+                hire: { text: "Great choice! Here's how you can get in touch to hire her 👇", target: "#contact" },
+                contact: { text: "Here's her contact info and message form 👇", target: "#contact" }
+            };
+
+            function addMessage(text, sender) {
+                const msg = document.createElement("div");
+                msg.className = "assistant-msg " + sender;
+                msg.textContent = text;
+                body.appendChild(msg);
+                body.scrollTop = body.scrollHeight;
+            }
+
+            function openPanel() {
+                panel.classList.remove("hidden");
+                toggleBtn.setAttribute("aria-expanded", "true");
+            }
+
+            function closePanel() {
+                panel.classList.add("hidden");
+                toggleBtn.setAttribute("aria-expanded", "false");
+            }
+
+            if (toggleBtn) {
+                toggleBtn.addEventListener("click", () => {
+                    if (panel.classList.contains("hidden")) {
+                        openPanel();
+                    } else {
+                        closePanel();
+                    }
+                });
+            }
+
+            if (closeBtn) {
+                closeBtn.addEventListener("click", closePanel);
+            }
+
+            chips.forEach(chip => {
+                chip.addEventListener("click", () => {
+                    const key = chip.getAttribute("data-reply");
+                    const reply = replies[key];
+                    addMessage(chip.textContent, "user");
+                    setTimeout(() => {
+                        addMessage(reply.text, "bot");
+                        const targetEl = document.querySelector(reply.target);
+                        if (targetEl) {
+                            setTimeout(() => {
+                                targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+                            }, 400);
+                        }
+                    }, 300);
+                });
+            });
+
+            if (form) {
+                form.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    const value = input.value.trim();
+                    if (!value) return;
+                    addMessage(value, "user");
+                    input.value = "";
+                    setTimeout(() => {
+                        addMessage("Thanks for your message! Feel free to use the Contact form below, or tap one of the quick options above for a fast answer.", "bot");
+                    }, 400);
+                });
+            }
+        });
+    </script>
+
+    <!-- Page Preloader Dismissal -->
+    <script>
+        window.addEventListener("load", () => {
+            const preloader = document.getElementById("page-preloader");
+            if (preloader) {
+                preloader.classList.add("preloader-hidden");
+                setTimeout(() => preloader.remove(), 500);
+            }
+        });
+    </script>
+
+    <!-- Scroll Reveal Animation Logic -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const revealTargets = document.querySelectorAll(".reveal-section");
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("reveal-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+
+            revealTargets.forEach(target => revealObserver.observe(target));
+        });
+    </script>
+
+    <!-- Back To Top Button Logic -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const backToTopBtn = document.getElementById("back-to-top");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 400) {
+                    backToTopBtn.classList.add("visible");
+                } else {
+                    backToTopBtn.classList.remove("visible");
+                }
+            });
+
+            backToTopBtn.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+
+    <!-- Moving Text Typing Animation Logic Loops -->
+    <script>
+        const words = ["Junior Web Developer", "Frontend Developer"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const targetElement = document.getElementById("moving-text");
+
+        function typeAnimation() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                targetElement.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                targetElement.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 40 : 80;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typeSpeed = 1600; 
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length; 
+                typeSpeed = 400;
+            }
+
+            setTimeout(typeAnimation, typeSpeed);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(typeAnimation, 800);
+        });
+    </script>
+
+    <!-- Counter Logic Integration with Scroll Detection Grid -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll('.counter-digit');
+            
+            const runCounter = (counter) => {
+                const start = parseInt(counter.getAttribute('data-start'));
+                const target = parseInt(counter.getAttribute('data-target'));
+                let current = start;
+                
+                const duration = 1500; 
+                const steps = target - start;
+                const stepTime = Math.max(Math.floor(duration / steps), 15);
+
+                counter.textContent = current;
+
+                const timer = setInterval(() => {
+                    if (current < target) {
+                        current++;
+                        counter.textContent = current;
+                    } else {
+                        clearInterval(timer);
+                    }
+                }, stepTime);
+            };
+
+            const observerOptions = {
+                root: null,
+                threshold: 0.2 
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const targetCounters = entry.target.querySelectorAll('.counter-digit');
+                        targetCounters.forEach(counter => runCounter(counter));
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            const section = document.getElementById('metrics-counters');
+            if (section) {
+                observer.observe(section);
+            }
+        });
+    </script>
+
+    <!-- Blog Article Full-Page Open / Back Logic -->
+    <script>
+        function openArticle(card) {
+            const overlay = document.getElementById("article-overlay");
+            const imgEl = card.querySelector(".article-thumbnail-image");
+            const titleEl = card.querySelector("h3");
+            const excerptEl = card.querySelector("p.text-xs:not(.article-full)");
+            const fullEl = card.querySelector(".article-full");
+
+            document.getElementById("overlay-article-img").src = imgEl.src;
+            document.getElementById("overlay-article-img").alt = imgEl.alt;
+            document.getElementById("overlay-article-title").textContent = titleEl.textContent;
+            document.getElementById("overlay-article-body").innerHTML =
+                "<p>" + excerptEl.textContent + "</p><p>" + fullEl.textContent + "</p>";
+
+            overlay.classList.remove("hidden");
+            document.body.classList.add("article-overlay-open");
+            overlay.scrollTop = 0;
+        }
+
+        function closeArticle() {
+            const overlay = document.getElementById("article-overlay");
+            overlay.classList.add("hidden");
+            document.body.classList.remove("article-overlay-open");
+        }
+    </script>
+
+    <!-- About Section Read More Toggle JavaScript Logic -->
+    <script>
+        function toggleAboutText() {
+            const extraText = document.getElementById("extra-about-text");
+            const btnText = document.getElementById("btn-text");
+            const btnIcon = document.getElementById("btn-icon");
+
+            if (extraText.classList.contains("hidden")) {
+                extraText.classList.remove("hidden");
+                btnText.textContent = "Read Less";
+                btnIcon.classList.remove("fa-chevron-down");
+                btnIcon.classList.add("fa-chevron-up");
+            } else {
+                extraText.classList.add("hidden");
+                btnText.textContent = "Read More";
+                btnIcon.classList.remove("fa-chevron-up");
+                btnIcon.classList.add("fa-chevron-down");
+            }
+        }
+    </script>
+</body>
+</html>
